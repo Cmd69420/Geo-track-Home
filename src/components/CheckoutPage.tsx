@@ -105,7 +105,7 @@ export function CheckoutPage({
         });
 
         alert("Free plan activated successfully 🎉");
-        window.location.replace("https://backup-server-q2dc.onrender.com");
+        window.location.replace("https://dashboard-tsw3.onrender.com");
         return;
       }
 
@@ -169,7 +169,7 @@ export function CheckoutPage({
           });
 
           alert("Payment successful 🎉");
-          window.location.replace("https://backup-server-q2dc.onrender.com");
+          window.location.replace("https://dashboard-tsw3.onrender.com");
         },
         theme: { color: "#2563eb" },
       });
