@@ -171,12 +171,7 @@ export default function App() {
 
         <Route
           path="/payment-success"
-          element={
-            <PaymentSuccess
-              selectedPlan={selectedPlan}
-              billingCycle={billingCycle}
-            />
-          }
+          element={<PaymentSuccess />}
         />
 
         <Route path="/privacy" element={<PrivacyPolicy onBack={() => navigate("/home")} />} />

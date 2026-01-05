@@ -31,3 +31,12 @@ export const getTransactionDetails = async (transactionId: string) => {
   const res = await API.get(`/api/payment/transaction/${transactionId}`);
   return res.data;
 };
+
+export const downloadInvoice = (transactionId: string) => {
+  if (!transactionId) return;
+
+  window.open(
+    `${API.defaults.baseURL}/api/payment/invoice/${transactionId}`,
+    "_blank"
+  );
+};

@@ -169,8 +169,9 @@ export function CheckoutPage({
             razorpay_signature: response.razorpay_signature,
           });
 
-          alert("Payment successful 🎉");
-          window.location.replace("https://geo-track-em3s.onrender.com");
+          window.location.href = `/payment-success?txn=${transactionId}&plan=${encodeURIComponent(
+            selectedPlan
+          )}&cycle=${billingCycle}`;
         },
         theme: { color: "#2563eb" },
       });
