@@ -103,7 +103,7 @@ export function PaymentSuccess() {
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Amount</span>
                 <span className="font-medium">
-                  ₹{(transaction.amount / 100).toFixed(2)}
+                  ₹{(transaction.amount / 1).toFixed(2)}
                 </span>
               </div>
 
