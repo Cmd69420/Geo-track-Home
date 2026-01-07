@@ -394,7 +394,7 @@ export function CheckoutPage({
 
                 <div>
                   <p className="text-sm text-muted-foreground mb-3">Billing Cycle</p>
-                  <Tabs value={billingCycle} onValueChange={(value) => setBillingCycle(value as BillingCycle)}>
+                  <Tabs value={billingCycle} onValueChange={(value : BillingCycle) => setBillingCycle(value as BillingCycle)}>
                     <TabsList className="grid w-full grid-cols-3">
                       <TabsTrigger value="monthly" className="text-xs">Monthly</TabsTrigger>
                       <TabsTrigger value="quarterly" className="text-xs">
