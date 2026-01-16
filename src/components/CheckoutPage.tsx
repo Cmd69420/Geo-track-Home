@@ -47,8 +47,6 @@ export function CheckoutPage({
     gstNumber: "",
   });
 
-  const [submitting, setSubmitting] = useState(false);
-
   const [lmsPlan, setLmsPlan] = useState<{
     licenseId: string;
     planName: string;   
