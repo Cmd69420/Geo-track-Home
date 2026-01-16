@@ -232,13 +232,6 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
                         ? "default"
                         : "outline"
                     }
-                    onClick={() => {
-                      if (plan.isEnterprise) {
-                        window.location.href = "/contact-sales";
-                        return;
-                      }
-                      onPlanSelect(plan.licenseType, billingCycle);
-                    }}
                   >
                     {plan.isFree
                       ? "Get Started Free"

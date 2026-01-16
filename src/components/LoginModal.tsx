@@ -132,7 +132,7 @@ export function LoginModal({ open, onOpenChange, onAdminLogin, onLoginSuccess }:
                   <Input
                     id="admin-email"
                     type="email"
-                    placeholder="admin@trackon.com"
+                    placeholder="admin@geotrack.com"
                     value={adminEmail}
                     onChange={(e) => setAdminEmail(e.target.value)}
                     className="pl-10"
