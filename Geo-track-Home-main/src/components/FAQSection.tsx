@@ -25,12 +25,12 @@ export function FAQSection({ onContactClick }: FAQSectionProps) {
       category: "General",
       faqs: [
         {
-          question: "What is WorkTrack Pro?",
-          answer: "WorkTrack Pro is a comprehensive field sales tracking application that provides real-time GPS location tracking, pincode-based client filtering, and seamless Tally ERP integration. It helps businesses manage their field sales teams efficiently with automatic location logging, client management, and interactive map views."
+          question: "What is GeoTrack Pro?",
+          answer: "GeoTrack Pro is a comprehensive field sales tracking application that provides real-time GPS location tracking, pincode-based client filtering, and seamless Tally Prime. It helps businesses manage their field sales teams efficiently with automatic location logging, client management, and interactive map views."
         },
         {
           question: "What platforms are supported?",
-          answer: "WorkTrack Pro includes a web-based admin panel accessible from any browser and a native Android mobile app for field executives. The Android app is built with Kotlin and supports offline mode with automatic data synchronization when internet connection is restored."
+          answer: "GeoTrack Pro includes a web-based admin panel accessible from any browser and a native Android mobile app for field executives. The Android app is built with Kotlin and supports offline mode with automatic data synchronization when internet connection is restored."
         },
         {
           question: "Is there a free trial available?",
@@ -50,8 +50,8 @@ export function FAQSection({ onContactClick }: FAQSectionProps) {
           answer: "This unique feature automatically filters and displays only clients located in the sales representative's current pincode area using reverse geocoding technology. When a field executive's location changes, the system automatically updates the client list to show only relevant clients in that area, making visits more efficient."
         },
         {
-          question: "Can I integrate with Tally ERP?",
-          answer: "Yes! WorkTrack Pro offers seamless bidirectional synchronization with Tally ERP. You can bulk import clients from Tally, maintain GUID mapping for accurate data sync, automatically detect and remove duplicates, and track complete sync history. The integration ensures your client data stays consistent across both platforms."
+          question: "Can I integrate with Tally Prime?",
+          answer: "Yes! GeoTrack Pro offers seamless bidirectional synchronization with Tally Prime. You can bulk import clients from Tally, maintain GUID mapping for accurate data sync, automatically detect and remove duplicates, and track complete sync history. The integration ensures your client data stays consistent across both platforms."
         }
       ]
     },
@@ -132,7 +132,7 @@ export function FAQSection({ onContactClick }: FAQSectionProps) {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about WorkTrack Pro
+            Find answers to common questions about GeoTrack
           </p>
         </div>
 
@@ -208,7 +208,7 @@ export function FAQSection({ onContactClick }: FAQSectionProps) {
             className="bg-white text-primary hover:bg-white/90 shadow-md"
             onClick={() => onContactClick?.('support')}
           >
-            Contact Support
+            Our Team is Here to Help you 24/7
           </Button>
         </div>
       </div>

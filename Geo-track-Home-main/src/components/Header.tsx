@@ -96,10 +96,15 @@ export function Header({ onLoginClick }: HeaderProps) {
 
         {/* Actions */}
         <div className="flex items-center gap-2">
-          <Button onClick={onLoginClick} className="hidden md:flex items-center gap-2">
-            <LogIn className="h-4 w-4" />
-            Login
-          </Button>
+          <Button
+  onClick={() => {
+    window.location.href = "https://geo-track-em3s.onrender.com/login";
+  }}
+  className="hidden md:flex items-center gap-2"
+>
+  Login
+</Button>
+
 
           <Button
             variant="ghost"

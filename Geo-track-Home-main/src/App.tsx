@@ -12,7 +12,7 @@ import { HeroSection } from "./components/HeroSection";
 import { FeaturesSection } from "./components/FeaturesSection";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 import { ProductSection } from "./components/ProductSection";
-import { UseCasesSection } from "./components/UseCasesSection";
+
 import { FAQSection } from "./components/FAQSection";
 import { PricingSection } from "./components/PricingSection";
 import { CheckoutPage } from "./components/CheckoutPage";
@@ -140,9 +140,7 @@ export default function App() {
           <PricingSection onPlanSelect={handlePlanSelect} />
         </section>
 
-        <section id="use-cases">
-          <UseCasesSection onGetStartedClick={handleGetStartedClick} />
-        </section>
+        
 
         <section id="faqs">
           <FAQSection />
@@ -161,8 +159,6 @@ export default function App() {
     onNavigateToPartners={handleNavigateToPartners}
   />
 )}
-
-
 
       <Routes>
         {/* Default */}

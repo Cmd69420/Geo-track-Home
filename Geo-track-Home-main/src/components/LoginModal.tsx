@@ -96,7 +96,7 @@ export function LoginModal({ open, onOpenChange, onAdminLogin, onLoginSuccess }:
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Login to Trackon</DialogTitle>
+          <DialogTitle>Login to GeoTrack</DialogTitle>
           <DialogDescription>
             Sign in to continue
           </DialogDescription>
@@ -122,7 +122,7 @@ export function LoginModal({ open, onOpenChange, onAdminLogin, onLoginSuccess }:
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                  />
+                  /> 
                 </div>
               )}
 

@@ -32,8 +32,8 @@ export function FeaturesSection() {
     },
     {
       icon: RefreshCw,
-      title: "Tally ERP Integration",
-      description: "Seamless bidirectional sync with Tally ERP and automatic duplicate detection.",
+      title: "Tally Prime Integration",
+      description: "Seamless bidirectional sync with Tally Prime and automatic duplicate detection.",
       color: "purple"
     }
   ];
@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h2>
           <p className="text-lg text-muted-foreground">
             From field tracking to operations, our solutions are built to streamline every 
-            core function of your business. Whether you're using <span className="font-semibold">WorkTrack Pro</span> or 
+            core function of your business. Whether you're using <span className="font-semibold">GeoTrack</span> or 
             our flexible platform, we've got you covered with everything you need — and more.
           </p>
         </div>
