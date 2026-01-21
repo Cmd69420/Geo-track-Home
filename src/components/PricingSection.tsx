@@ -69,9 +69,9 @@ export function PricingSection({ onPlanSelect }: PricingSectionProps) {
   };
 
   const getBillingText = () => {
-    if (billingCycle === "monthly") return "/month";
-    if (billingCycle === "quarterly") return "/quarter";
-    if (billingCycle === "half-yearly") return "/6 months";
+    if (billingCycle === "monthly") return "/user/month";
+    if (billingCycle === "quarterly") return "/user/quarter";
+    if (billingCycle === "half-yearly") return "/user/6 months";
     return "/year";
   };
 
