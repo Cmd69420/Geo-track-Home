@@ -3,9 +3,11 @@ import { Menu, LogIn } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logoImage from "../assets/geotrack.png";
+import { PartnerPage } from "./pages/PartnerPage";
 
 interface HeaderProps {
   onLoginClick: () => void;
+  onNavigateToPartners: () => void;
 }
 
 export function Header({ onLoginClick }: HeaderProps) {
@@ -30,6 +32,7 @@ export function Header({ onLoginClick }: HeaderProps) {
       window.scrollTo({ top: y, behavior: "smooth" });
     };
 
+
     // update URL (SEO-friendly)
     window.history.pushState(null, "", `/${sectionId}`);
 
@@ -40,6 +43,12 @@ export function Header({ onLoginClick }: HeaderProps) {
 
     setMobileMenuOpen(false);
   };
+
+  const handlePartnersClick = () => {
+    navigate("/partners");
+    setMobileMenuOpen(false);
+  }
+
 
 
   return (
@@ -76,14 +85,26 @@ export function Header({ onLoginClick }: HeaderProps) {
           <button onClick={() => scrollToSection("faqs")} className="text-sm hover:text-primary">
             FAQs
           </button>
+          <button
+          onClick={handlePartnersClick}
+          className="text-sm hover:text-primary"
+        >
+          Partners
+        </button>
+
         </nav>
 
         {/* Actions */}
         <div className="flex items-center gap-2">
-          <Button onClick={onLoginClick} className="hidden md:flex items-center gap-2">
-            <LogIn className="h-4 w-4" />
-            Login
-          </Button>
+          <Button
+  onClick={() => {
+    window.location.href = "https://geo-track-em3s.onrender.com/login";
+  }}
+  className="hidden md:flex items-center gap-2"
+>
+  Login
+</Button>
+
 
           <Button
             variant="ghost"
@@ -118,6 +139,7 @@ export function Header({ onLoginClick }: HeaderProps) {
             <button onClick={() => scrollToSection("faqs")} className="text-sm text-left hover:text-primary">
               FAQs
             </button>
+            
 
             <Button onClick={onLoginClick} className="w-full">
               <LogIn className="h-4 w-4 mr-2" />

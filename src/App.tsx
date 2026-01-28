@@ -147,7 +147,10 @@ export default function App() {
       return (
         <div className="min-h-screen bg-background">
           {!hideHeader && (
-  <Header onLoginClick={() => setLoginModalOpen(true)} />
+  <Header
+  onLoginClick={() => setLoginModalOpen(true)}
+  onNavigateToPartners={() => navigate("/partners")}
+/>
 )}
 
 

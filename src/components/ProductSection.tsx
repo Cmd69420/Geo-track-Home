@@ -16,7 +16,7 @@ export function ProductSection() {
     {
       icon: DollarSign,
       title: "Advanced Financial Management",
-      description: "Complete accounting, budgeting, and financial reporting for your business",
+      description: "Record daily work-related expenses quickly and accurately.Securely save expense records for future review and reporting.",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       iconColor: "text-blue-600"
@@ -55,8 +55,8 @@ export function ProductSection() {
     },
     {
       icon: RefreshCw,
-      title: "Tally ERP Integration",
-      description: "Seamless bidirectional sync with Tally ERP software",
+      title: "Tally Prime Integration",
+      description: "Seamless bidirectional sync with Tally Prime software",
       bgColor: "bg-pink-50",
       borderColor: "border-pink-200",
       iconColor: "text-pink-600"
